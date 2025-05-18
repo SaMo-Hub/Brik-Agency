@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <NavBar/>
-     <div className=''>
+     <div className='bg'>
       <Header/>
       <Project/>
       <Service/>

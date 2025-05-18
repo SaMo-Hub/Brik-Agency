@@ -1,39 +1,41 @@
 import React from "react";
 
 export const Service = () => {
-
-    const serviceList = [
-      {icon:'',title:"Websites for the most ambitious brands", paragraphe:'Lorem ipsum dolor sit amet consectetur. Odio ut sed vitae vitae tellus laoreet sed. Nunc in leo adipiscing fermentum consequat risus. Vel eget quam duis sodales hendrerit non. Neque quis senectus bibendum facilisis nullam habitant id imperdiet quis.'},
-      {icon:'',title:"Websites for the most ambitious brands", paragraphe:'Lorem ipsum dolor sit amet consectetur. Odio ut sed vitae vitae tellus laoreet sed. Nunc in leo adipiscing fermentum consequat risus. Vel eget quam duis sodales hendrerit non. Neque quis senectus bibendum facilisis nullam habitant id imperdiet quis.'},
-    ]
+  const serviceList = [
+    {
+      icon: '',
+      title: "Websites for the most ambitious brands",
+      paragraphe: 'Lorem ipsum dolor sit amet consectetur. Odio ut sed vitae vitae tellus laoreet sed...'
+    },
+    {
+      icon: '',
+      title: "Websites for the most ambitious brands",
+      paragraphe: 'Lorem ipsum dolor sit amet consectetur. Odio ut sed vitae vitae tellus laoreet sed...'
+    },
+  ];
 
   return (
-    <section className="service">
+    <section className="mb-[150px]">
       <div>
-            <h3 className='subbtitle'>What we do</h3>
-            <h2 className='title'>Service</h2>
-        </div>
-      <div className="serviceTexte">
-        <p className="">
+        <h3 className="relative top-[15px] left-[5px] font-['Supply_Mono'] text-[16px]">What we do</h3>
+        <h2 className="font-['Grotesk'] uppercase text-[138px] mb-[120px]">Service</h2>
+      </div>
+      <div className="w-[60%] ml-[40%]">
+        <p className="mb-12">
           Our work speaks for itself, earning recognition from Awwwards,
-          Creative Circle, Communication Arts, and the Webby Awards among
-          others. But more importantly, it delivers results for our clients,
-          turning visitors into customers and customers into brand advocates.
+          Creative Circle, Communication Arts, and the Webby Awards among
+          others.
         </p>
-
-        <div className="serviceList">
-        {serviceList.map((item,index)=>(
-            <div className="serviceButton" id={index}>
-            <div className="serviceButtonIconTexte">
-              <div className="icon">
-                <img src={item.icon} alt={item.icon} />
+        <div className="flex flex-col gap-3">
+          {serviceList.map((item, index) => (
+            <div key={index} className="flex flex-col gap-6 p-4 rounded border border-[#E72E00]">
+              <div className="flex items-center gap-3 font-['Supply_Mono']">
+                <div className="w-[27px] h-[27px] bg-[#E72E00] rounded"></div>
+                <p>{item.title}</p>
               </div>
-              <p>{item.title} </p>
+              <p>{item.paragraphe}</p>
             </div>
-              <p>{item.paragraphe} </p>
-          </div>
-        ))}
-
+          ))}
         </div>
       </div>
     </section>
