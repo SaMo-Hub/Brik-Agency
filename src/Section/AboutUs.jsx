@@ -5,12 +5,16 @@ export const AboutUs = () => {
     <section className="mb-[150px]">
       <div>
         <div>
-          <h3 className="relative top-[15px] left-[5px] font-['Supply_Mono'] text-[16px]">What we do</h3>
+          <h3 className="relative top-[15px] left-[5px] font-supply text-[16px]">What we do</h3>
           <h2 className="font-['Grotesk'] uppercase text-[138px] mb-[120px]">About us</h2>
         </div>
       </div>
       <div className="w-full flex justify-center">
-        <div className="flex flex-col w-1/2 p-12 rounded border border-[#E72E00]">
+        <div className="flex flex-col w-[700px] p-12 rounded border border-[#E72E00]">
+         
+         <div className="w-full items-center flex justify-center mb-[80px]">
+           <img className="w-2/6" src="../../logo.svg" alt="" />
+          </div>
           <p className="mb-[60px]">
             Our work speaks for itself, earning recognition from Awwwards, Creative Circle,
             Communication Arts, and the Webby Awards among others. But more importantly, it delivers

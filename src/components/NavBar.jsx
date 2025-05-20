@@ -2,7 +2,7 @@ import React from 'react';
 
 export const NavBar = () => {
   return (
-    <nav className="mb-6">
+    <nav className="pt-12 mb-6">
       <div className="flex items-center justify-between">
         <img src="" alt="logo" className="h-8" />
 
@@ -18,7 +18,7 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <div className="mt-3 h-2 w-full rounded-t border-t-8 border-[#E72E00]"></div>
+        <div className="mt-3 h-2 w-full rounded-t border-x-2 border-t-2 border-[#E72E00]"></div>
     </nav>
   );
 };

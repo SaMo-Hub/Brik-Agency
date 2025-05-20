@@ -11,16 +11,16 @@ import { NavBar } from './components/NavBar'
 function App() {
 
   return (
-    <>
+    <div className='text-primary px-16 bg-secondary '>
     <NavBar/>
-     <div className='bg'>
+     <div className=''>
       <Header/>
       <Project/>
       <Service/>
       <AboutUs/>
       <Footer/>
      </div>
-    </>
+    </div>
   )
 }
 

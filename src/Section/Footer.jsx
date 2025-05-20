@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className="mb-[150px]">
+    <footer className="pb-[150px]">
       <h2 className="font-['Grotesk'] uppercase text-[138px] mb-6">Say Hi</h2>
       <div>
         <div className="flex justify-between">
